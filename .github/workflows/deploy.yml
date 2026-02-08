@@ -22,6 +22,10 @@ jobs:
           submodules: recursive
           ssh-key: ${{ secrets.CONTENT_REPO_DEPLOY_KEY }}
 
+      - name: Update submodule to latest
+        run: |
+          git submodule update --remote --merge
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
