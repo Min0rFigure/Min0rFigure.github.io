@@ -1,27 +1,24 @@
 module.exports = {
   siteMetadata: {
-    title: "Tania Rascia's Website",
-    author: { name: 'Tania Rascia' },
+    title: "Min0rFigure's Website",
+    author: { name: 'Min0rFigure' },
     pathPrefix: '/',
-    siteUrl: 'https://taniarascia.com',
-    description:
-      'Software engineer and open-source creator. This is my digital garden.',
-    feedUrl: 'https://taniarascia.com/rss.xml',
-    logo: 'https://taniarascia.com/logo.png',
+    siteUrl: 'https://min0rfigure.github.io',
+    description: 'Personal website and digital garden.',
+    feedUrl: 'https://min0rfigure.github.io/rss.xml',
+    logo: 'https://min0rfigure.github.io/logo.png',
   },
   plugins: [
     // ===================================================================================
     // Meta
     // ===================================================================================
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-netlify',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: "Tania Rascia's Website",
-        short_name: 'taniarascia.com',
-        description:
-          'Software engineer and open source creator. This is my digital garden.',
+        name: "Min0rFigure's Website",
+        short_name: 'min0rfigure',
+        description: 'Personal website and digital garden.',
         start_url: '/',
         background_color: 'white',
         // theme_color: '#959af8',
@@ -55,7 +52,7 @@ module.exports = {
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   custom_elements: [
                     { 'content:encoded': edge.node.html },
-                    { author: 'hello@taniarascia.com' },
+                    { author: 'hello@min0rfigure.github.io' },
                   ],
                 })
               })
@@ -85,7 +82,7 @@ module.exports = {
             }
             `,
             output: '/rss.xml',
-            title: 'Tania Rascia | RSS Feed',
+            title: 'Min0rFigure | RSS Feed',
           },
         ],
       },

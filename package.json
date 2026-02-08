@@ -1,9 +1,9 @@
 {
-  "name": "taniarascia.com",
+  "name": "min0rfigure.github.io",
   "private": true,
   "version": "7.1",
-  "description": "Tania Rascia's personal website.",
-  "author": "Tania Rascia",
+  "description": "Min0rFigure's personal website.",
+  "author": "Min0rFigure",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/taniarascia/taniarascia.com"
+    "url": "https://github.com/Min0rFigure/Min0rFigure.github.io"
   },
   "dependencies": {
     "gatsby": "^5.15.0",
@@ -22,7 +22,6 @@
     "gatsby-plugin-image": "^3.15.0",
     "gatsby-plugin-layout": "^4.15.0",
     "gatsby-plugin-local-search": "^2.0.1",
-    "gatsby-plugin-netlify": "^5.1.1",
     "gatsby-plugin-postcss": "^6.15.0",
     "gatsby-plugin-react-helmet": "^6.15.0",
     "gatsby-plugin-sharp": "^5.15.0",
