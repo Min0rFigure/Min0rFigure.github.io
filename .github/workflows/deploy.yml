@@ -24,7 +24,9 @@ jobs:
 
       - name: Update submodule to latest
         run: |
-          git submodule update --remote --merge
+          cd content
+          git fetch --unshallow origin main || true
+          git checkout origin/main
 
       - name: Setup Node
         uses: actions/setup-node@v4
