@@ -1,9 +1,8 @@
 const config = {
-  siteTitle: "Tania Rascia's Website",
-  siteUrl: 'https://taniarascia.com',
+  siteTitle: "Min0rFigure's Website",
+  siteUrl: 'https://min0rfigure.github.io',
   siteLogo: '/logo.png',
-  description:
-    'Software engineer and open source creator. This is my digital garden.',
+  description: 'Personal website and digital garden.',
 }
 
 export default config

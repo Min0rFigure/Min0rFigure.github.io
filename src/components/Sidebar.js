@@ -20,7 +20,7 @@ export const Sidebar = ({
     { url: '/blog', label: 'Blog', image: projects },
     { url: '/notes', label: 'Notes', image: blog },
     { url: '/projects', label: 'Projects', image: github },
-    { url: '/me', label: 'About Me', image: floppy },
+    { url: '/about', label: 'About Me', image: floppy },
   ]
 
   return (
@@ -32,13 +32,13 @@ export const Sidebar = ({
               <img
                 src={floppyLogo}
                 className="navbar-logo"
-                alt="tania.dev"
+                alt="Min0rFigure"
                 title="💾"
                 height="16"
                 width="16"
               />
             </span>
-            <span className="site-name">Tania Rascia</span>
+            <span className="site-name">Min0rFigure</span>
           </Link>
           <div className="flex-align-center">
             <ColorDropdown
@@ -66,8 +66,7 @@ export const Sidebar = ({
         <h2>About Me</h2>
         <div className="sidebar-content">
           <p>
-            I'm <Link to="/me">Tania</Link>, software engineer and open-source
-            creator. This is my digital garden. 🌱
+            I'm <Link to="/about">Min0rFigure</Link>. This is my digital garden.
           </p>
         </div>
       </section>
@@ -86,20 +85,7 @@ export const Sidebar = ({
       <section className="sidebar-section">
         <h2>Stay Connected</h2>
         <p className="sidebar-links">
-          <a
-            href="https://taniarascia.substack.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Email signup
-          </a>
-          <a
-            href="https://go.bsky.app/SmEWb8G"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Bluesky
-          </a>
+          <a href="https://github.com/Min0rFigure">GitHub</a>
           <a href="/rss.xml">RSS feed</a>
         </p>
       </section>

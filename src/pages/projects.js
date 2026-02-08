@@ -15,12 +15,12 @@ export default function Projects() {
   const [repos, setRepos] = useState([])
   const title = 'Projects'
   const description =
-    "Open-source projects I've made over the years, including this website, an emulator, and various games, apps, frameworks, and boilerplates."
+    "A collection of projects I've worked on over the years."
 
   useEffect(() => {
     async function getStars() {
       const repos = await fetch(
-        'https://api.github.com/users/taniarascia/repos?per_page=100'
+        'https://api.github.com/users/Min0rFigure/repos?per_page=100'
       )
 
       return repos.json()
@@ -49,7 +49,7 @@ export default function Projects() {
                   {repos.find((repo) => repo.name === project.slug) && (
                     <div className="star">
                       <a
-                        href={`https://github.com/taniarascia/${project.slug}/stargazers`}
+                        href={`https://github.com/Min0rFigure/${project.slug}/stargazers`}
                       >
                         {Number(
                           repos.find((repo) => repo.name === project.slug)
@@ -63,7 +63,7 @@ export default function Projects() {
                 <time>{project.date}</time>
                 <a
                   className="card-header"
-                  href={`https://github.com/taniarascia/${project.slug}`}
+                  href={`https://github.com/Min0rFigure/${project.slug}`}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -91,7 +91,7 @@ export default function Projects() {
                   )}
                   <a
                     className="button secondary small"
-                    href={`https://github.com/taniarascia/${project.slug}`}
+                    href={`https://github.com/Min0rFigure/${project.slug}`}
                     target="_blank"
                     rel="noreferrer"
                   >

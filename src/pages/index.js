@@ -13,8 +13,6 @@ import { PageLayout } from '../components/PageLayout'
 import { projectsList } from '../data/projectsList'
 import { getSimplifiedPosts } from '../utils/helpers'
 import config from '../utils/config'
-import newMoon from '../../content/images/new-moon.svg'
-import floppy from '../../content/images/floppylogo.png'
 
 export default function Index({ data }) {
   const latestNotes = data.latestNotes.edges
@@ -40,35 +38,22 @@ export default function Index({ data }) {
         <Hero type="index">
           <div className="hero-wrapper">
             <div>
-              <h1>Hey, I'm Tania!</h1>
+              <h1>Hey, I'm Min0rFigure!</h1>
               <p className="hero-description">
-                I'm a software engineer, open-source creator, and former
-                professional chef. I've been making websites since 1998 and{' '}
-                <Link to="/blog">writing on this blog</Link> for over ten years!
+                Welcome to my personal website. I share notes, projects, and
+                technical posts here.
               </p>
               <p className="hero-description">
-                Everything on this site is written by me, not AI.
+                Check out the <Link to="/blog">blog</Link> or learn more about me.
               </p>
               <p
                 className="flex-wrap flex-align-center gap"
                 style={{ marginBottom: 0 }}
               >
-                <Link className="button" to="/me">
-                  <img src={floppy} alt="Floppy Logo" /> About Me
+                <Link className="button" to="/about">
+                  About Me
                 </Link>
-                <a
-                  href="https://taniarascia.substack.com"
-                  className="button"
-                  type="button"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <img src={newMoon} alt="New Moon Logo" /> Email Newsletter
-                </a>
               </p>
-            </div>
-            <div className="hero-image-container">
-              <img src="/ram.png" className="hero-image" alt="RAM Ram" />
             </div>
           </div>
         </Hero>
@@ -130,7 +115,7 @@ export default function Index({ data }) {
                   <div className="card" key={`hightlight-${project.slug}`}>
                     <time>{project.date}</time>
                     <a
-                      href={`https://github.com/taniarascia/${project.slug}`}
+                      href={`https://github.com/Min0rFigure/${project.slug}`}
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -156,7 +141,7 @@ export default function Index({ data }) {
                       </a>
                       <a
                         className="button secondary small"
-                        href={`https://github.com/taniarascia/${project.slug}`}
+                        href={`https://github.com/Min0rFigure/${project.slug}`}
                         target="_blank"
                         rel="noreferrer"
                       >
